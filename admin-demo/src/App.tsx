@@ -7,7 +7,7 @@ import { CategoryList } from "./components/categoryList";
 import { CategoryEdit } from "./components/categoryEdit";
 import { CategoryCreate } from "./components/categoryCreate";
 
-const dataProvider = jsonServerProvider("http://localhost:3000")
+const dataProvider = jsonServerProvider("https://react-project-0m89.onrender.com")
 const App = () => <Admin dataProvider={dataProvider}>
 <Resource name="posters" list={PosterList} edit={PosterEdit} create={PosterCreate}/>
 <Resource name="categories" list={CategoryList}  edit={CategoryEdit} create={CategoryCreate}/>
